@@ -1,7 +1,7 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 What is a programming language?
-Answer:
+Answer: A programming language is a language that tells the computer what to do
 
 What is a JDK composed of? Define each components?
 Answer:
