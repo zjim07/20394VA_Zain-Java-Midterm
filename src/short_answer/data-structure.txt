@@ -1,19 +1,20 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 Why do we need data structure?
-Answer:
+Answer: We need them to store and organize information.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: You can add, remove, sort, merge, etc.
 
 When would we use data structures in the real world?
-Answer:
+Answer: There are many ways. An example could be to store the inventory in a video game.
 
 What is an Array?
-Answer:
+Answer: It's a data structure that lets us store multiple values of the same datatype in one single structure.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: You can't change the length of an Array but you can change the length of an ArrayList. Also with Arrayists, primitive values can't be
+stored, this is not the case with Arrays.
 
 What is a LinkedList?
 Answer:
