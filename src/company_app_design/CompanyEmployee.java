@@ -1,5 +1,7 @@
 package company_app_design;
 
+import java.util.ArrayList;
+
 public class CompanyEmployee {
 
     /** INSTRUCTIONS
@@ -13,6 +15,38 @@ public class CompanyEmployee {
      */
     public static void main(String[] args) {
 
+        EmployeeInfo e1 = new EmployeeInfo("John", 1, "Manager", "john@gmail.com", "Marketing", 90_000);
+
+        System.out.println("Emp ID: " + e1.employeeId());
+
+        System.out.println("Emp Dept:" + e1.getDepartment());
+
+        System.out.println("Emp email: " + e1.getEmail());
+
+        System.out.println("Emp Salary: " + e1.calculateSalary());
+
+
+        e1.assignDepartment("Engineering");
+
+        System.out.println("new department: " + e1.getDepartment());
+
+        System.out.println("Num of employees: " + e1.getNumOfEmployees());
+        System.out.println();
+        e1.isFullTime(false);
+        System.out.println("Benefits for part time employees: ");
+        e1.benefits();
+        System.out.println();
+        e1.isFullTime(true);
+        System.out.println("Benefits for full-time employees: ");
+        e1.benefits();
+        System.out.println();
+        e1.printSlogan();
+
+
+
+
+
     }
+
 
 }

@@ -17,10 +17,12 @@ public interface Employee {
 
     String employeeName();
 
-    void assignDepartment();
+    void assignDepartment(String department);
 
     int calculateSalary();
 
     void benefits();
+
+
 
 }
