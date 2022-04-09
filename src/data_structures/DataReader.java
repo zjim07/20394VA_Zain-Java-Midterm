@@ -1,7 +1,16 @@
 package data_structures;
 
+import databases.SharedStepsDatabase;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class DataReader {
 
@@ -22,19 +31,34 @@ public class DataReader {
 
     public static void main(String[] args) {
         String textFilePath = System.getProperty("user.dir") + "/src/data_structures/data/self-driving-car";
+        SharedStepsDatabase ssdb = new SharedStepsDatabase();
 
         try {
 
             BufferedReader reader = new BufferedReader(new FileReader(textFilePath));
             String line;
+            String fileContents = "";
             while((line = reader.readLine()) != null) {
+                fileContents += line;
                 System.out.println(line);
+
             }
+            ssdb.insertString("text_file", "file_contents", fileContents); //stores the data in the database
+            String query = "select * from text_file;";
+
+            List<List<String>> results = ssdb.executeQueryReadAll(query);   //retrieves the data from the database
+
+
             reader.close();
 
-        } catch (Exception e){
 
+
+        } catch (Exception e){
+            e.printStackTrace();
         }
+
+
+
 
     }
 

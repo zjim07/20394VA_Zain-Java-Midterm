@@ -40,6 +40,9 @@ public class CompanyEmployee {
         System.out.println("Benefits for full-time employees: ");
         e1.benefits();
         System.out.println();
+
+        System.out.println("Employee Bonus: " + EmployeeInfo.calculateAnnualBonus(90_000, 4));
+        System.out.println();
         e1.printSlogan();
 
 
