@@ -3,7 +3,7 @@
 What is a programming language?
 Answer: A programming language is a language that tells the computer what to do
 
-What is a JDK composed of? Define each components? !!!!!!!!!!!!!
+What is a JDK composed of? Define each components !!!!!!!!!!!!!
 Answer: The JDK is composed of the Java Virtual Machine (JVM) & Java Runtime Environment (JRE).
 The JVM is a virtual machine that allows a computer to run Java programs.
 
@@ -33,7 +33,9 @@ Which class is the superclass of all classes?
 Answer: The object class.
 
 What is difference between path and classpath variables?
-Answer:
+Answer: Path is set for java tools in java programs like java and javac, which are used to compile your code.
+       Classpath is used by System or Application class loader to locate and load compile Java bytecodes stored in the
+       .class file.
 
 What is the difference between an Interface and Abstract class?
 Answer: You can only inherit from one Abstract class whereas you can implement an unlimited number of Interfaces.
@@ -171,7 +173,8 @@ Can you guarantee the garbage collection process?
 Answer: No.
 
 What is the difference between stack and heap in Java? !!!!!!!!!!!!!!!!
-Answer:
+Answer: Stack is used to store the order of method execution and local variables
+        while heap memory stores the objects
 
 What is reflection in Java and why is it useful?
 Answer: It allows an executing Java program to examine or "introspect" upon itself, and manipulate internal properties of the program.
@@ -188,14 +191,15 @@ Answer: It's a bunch of predefined classes and methods that developers can use t
 What are the testing Frameworks available in Java? !!!!!!!!!!!!
 Answer: Selenium, Cucumber, TestNG, and JUnit.
 
-What are jUnit and testNG? !!!!!!!!!!!!
+What are jUnit and testNG?
 Answer: jUnit is a testing framework for unit testing. TstNG is also a testing framework.
 
 What are the dependencies for this project?
-Answer:
+Answer: gson, jackson-annotations, jackson-core, jackson-databind, java-json, javax.json, mongo-java-driver,
+        mysql-connector-java, protobuf-java & testng.
 
 What is dependency injection in Java?
-Answer:
+Answer: The concept in which objects get other required objects from outside.
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer: Static binding uses Type information for binding while Dynamic binding uses Objects to resolve binding.
