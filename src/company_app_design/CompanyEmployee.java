@@ -17,13 +17,13 @@ public class CompanyEmployee {
 
         EmployeeInfo e1 = new EmployeeInfo("John", 1, "Manager", "john@gmail.com", "Marketing", 90_000);
 
-        System.out.println("Emp ID: " + e1.employeeId());
+        System.out.println("The Emp ID: " + e1.employeeId());
 
-        System.out.println("Emp Dept:" + e1.getDepartment());
+        System.out.println("The Emp Dept:" + e1.getDepartment());
 
-        System.out.println("Emp email: " + e1.getEmail());
+        System.out.println("The Emp email: " + e1.getEmail());
 
-        System.out.println("Emp Salary: " + e1.calculateSalary());
+        System.out.println("The Emp Salary: " + e1.calculateSalary());
 
 
         e1.assignDepartment("Engineering");
@@ -33,7 +33,7 @@ public class CompanyEmployee {
         System.out.println("Num of employees: " + e1.getNumOfEmployees());
         System.out.println();
         e1.isFullTime(false);
-        System.out.println("Benefits for part time employees: ");
+        System.out.println("Benefits for part time employees(This joke is copyrighted by me): ");
         e1.benefits();
         System.out.println();
         e1.isFullTime(true);
